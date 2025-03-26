@@ -127,40 +127,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check on scroll
     window.addEventListener('scroll', animateOnScroll);
     
-    // Search form functionality
-    const searchForm = document.querySelector('.search-form');
-    const searchButton = document.querySelector('.search-form button');
-    
-    if (searchForm) {
-        searchForm.addEventListener('submit', function(e) {
-            const searchInput = this.querySelector('input[name="query"]');
-            const query = searchInput.value.trim();
-            
-            if (!query) {
-                e.preventDefault();
-                alert('Please enter a search term');
-            }
-        });
-        
-        // Mobile search icon toggle
-        if (searchButton && window.innerWidth <= 768) {
-            searchButton.addEventListener('click', function(e) {
-                if (!searchForm.classList.contains('active')) {
-                    e.preventDefault();
-                    searchForm.classList.add('active');
-                    setTimeout(() => {
-                        searchForm.querySelector('input').focus();
-                    }, 100);
-                    
-                    // Close search when clicking outside
-                    document.addEventListener('click', function closeSearch(event) {
-                        if (!searchForm.contains(event.target)) {
-                            searchForm.classList.remove('active');
-                            document.removeEventListener('click', closeSearch);
-                        }
-                    });
-                }
-            });
-        }
-    }
+// Search functionality removed as requested
 });

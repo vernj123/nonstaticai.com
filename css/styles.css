@@ -331,77 +331,7 @@ ul, ol {
     background-color: rgba(121, 40, 202, 0.1);
 }
 
-.search-container {
-    flex: 0 0 auto;
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: var(--border-radius-md);
-    padding: 0.5rem;
-}
-
-.search-form input {
-    background: transparent;
-    border: none;
-    color: var(--text-primary);
-    padding: 0.25rem 0.5rem;
-    width: 150px;
-}
-
-.search-form input:focus {
-    outline: none;
-}
-
-.search-form button {
-    background: transparent;
-    border: none;
-    color: var(--text-secondary);
-    cursor: pointer;
-    padding: 0.25rem;
-}
-
-.search-form button:hover {
-    color: var(--neon-primary);
-}
-
-/* Mobile search icon only */
-@media (max-width: 768px) {
-    .search-container {
-        margin-right: 10px;
-    }
-    
-    .search-form {
-        background-color: transparent;
-        padding: 0;
-    }
-    
-    .search-form input {
-        display: none;
-        width: 0;
-    }
-    
-    .search-form button {
-        font-size: 1.2rem;
-        padding: 0.5rem;
-        color: var(--text-primary);
-    }
-    
-    .search-form.active input {
-        display: block;
-        width: 150px;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: var(--darker-bg);
-        padding: 0.5rem;
-        border-radius: var(--border-radius-md);
-        margin-top: 5px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-}
+/* Search functionality removed as requested */
 
 .menu-toggle {
     display: none;
@@ -873,19 +803,19 @@ ul, ol {
     
     .logo-container {
         flex: 0 0 auto;
+        margin-right: auto;
     }
     
     .main-nav {
-        order: 3;
-        flex: 0 0 100%;
-        margin-top: 0;
         position: relative;
     }
     
     .menu-toggle {
         display: block;
-        order: 3;
-        margin-left: 10px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
         z-index: 10;
     }
     
@@ -896,7 +826,7 @@ ul, ol {
         background-color: var(--darker-bg);
         position: absolute;
         top: 100%;
-        left: 0;
+        right: 0;
         padding: var(--spacing-sm);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         z-index: 100;
@@ -966,5 +896,21 @@ ul, ol {
     .tool-meta {
         flex-direction: column;
         gap: var(--spacing-xs);
+    }
+}
+
+/* ===== Mobile Menu Enhancement ===== */
+@media (max-width: 768px) {
+    /* Ensure hamburger is visible and properly styled */
+    .hamburger {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: var(--neon-primary);
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        background-color: var(--neon-primary);
     }
 }
