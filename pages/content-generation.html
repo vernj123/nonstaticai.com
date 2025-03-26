@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive reviews of AI content generation tools. Find the best AI writing assistants for your needs at NonstaticAI.">
+    <title>AI Content Generation Tools - Reviews & Comparisons | NonstaticAI</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Category-specific styles */
+        .category-header {
+            background: linear-gradient(to right, rgba(121, 40, 202, 0.1), rgba(255, 0, 128, 0.1));
+            padding: var(--spacing-xl) 0;
+            position: relative;
+        }
+        
+        .category-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--gradient-primary);
+            box-shadow: var(--neon-glow);
+        }
+        
+        .category-icon-large {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--neon-primary);
+            text-shadow: var(--neon-glow);
+        }
+        
+        .tools-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .comparison-table-container {
+            overflow-x: auto;
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: var(--border-radius-md);
+            overflow: hidden;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: var(--spacing-sm);
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .comparison-table th {
+            background-color: var(--darker-bg);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .comparison-table tr:hover {
+            background-color: rgba(121, 40, 202, 0.1);
+        }
+        
+        .feature-check {
+            color: var(--neon-accent);
+            text-align: center;
+        }
+        
+        .feature-x {
+            color: var(--neon-secondary);
+            text-align: center;
+        }
+        
+        .price-tag {
+            font-weight: 500;
+            color: var(--neon-primary);
+        }
+        
+        .faq-section {
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .faq-item {
+            margin-bottom: var(--spacing-md);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: var(--spacing-md);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: var(--spacing-sm);
+            color: var(--neon-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="NonstaticAI Logo" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active">AI Tools <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="content-generation.html" class="active">Content Generation</a></li>
+                            <li><a href="image-generation.html">Image Generation</a></li>
+                            <li><a href="video-creation.html">Video Creation</a></li>
+                            <li><a href="audio-tools.html">Audio Tools</a></li>
+                            <li><a href="productivity-tools.html">Productivity</a></li>
+                            <li><a href="business-tools.html">Business</a></li>
+                            <li><a href="development-tools.html">Development</a></li>
+                            <li><a href="marketing-tools.html">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="../blog/index.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form class="search-form" action="search-results.html" method="get">
+                    <input type="text" name="query" placeholder="Search AI tools..." aria-label="Search">
+                    <button type="submit" aria-label="Submit Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="container">
+            <div class="text-center">
+                <div class="category-icon-large">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h1>AI Content Generation Tools</h1>
+                <p>Discover the best AI-powered writing assistants to create high-quality content faster than ever before.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Introduction -->
+    <section class="section">
+        <div class="container">
+            <div class="section-content">
+                <h2>Transform Your Content Creation Process</h2>
+                <p>AI content generation tools have revolutionized the way we create written content. These powerful tools leverage advanced language models to help you write blog posts, articles, marketing copy, social media content, and more in a fraction of the time it would take manually.</p>
+                <p>Whether you're a content marketer, blogger, copywriter, or business owner, these AI writing assistants can help you overcome writer's block, generate creative ideas, and produce high-quality content at scale.</p>
+                <p>We've tested and reviewed the top AI content generation tools on the market to help you find the perfect solution for your specific needs and budget.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Top AI Content Generation Tools</h2>
+            <div class="tools-list">
+                <!-- Tool Card 1 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="../images/tool-placeholder-1.jpg" alt="AI Content Generator Pro" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-value">4.5/5</span>
+                        </div>
+                        <h3>AI Content Generator Pro</h3>
+                        <p>Create high-quality, SEO-optimized content in seconds with this powerful AI writing assistant.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $29/mo</span>
+                        </div>
+                        <a href="reviews/ai-content-generator-pro.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 2 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="../images/tool-placeholder-4.jpg" alt="ContentCraft AI" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                        <h3>ContentCraft AI</h3>
+                        <p>An all-in-one content creation platform with specialized templates for different content types.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $25/mo</span>
+                        </div>
+                        <a href="reviews/contentcraft-ai.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 3 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="../images/tool-placeholder-5.jpg" alt="WriterBot AI" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                        <h3>WriterBot AI</h3>
+                        <p>The most advanced AI writing assistant with human-like content generation capabilities.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $39/mo</span>
+                        </div>
+                        <a href="reviews/writerbot-ai.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 4 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="../images/tool-placeholder-6.jpg" alt="CopyGenius" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-value">3.5/5</span>
+                        </div>
+                        <h3>CopyGenius</h3>
+                        <p>Specialized in creating persuasive marketing copy and sales content that converts.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $19/mo</span>
+                        </div>
+                        <a href="reviews/copygenius.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 5 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="../images/tool-placeholder-7.jpg" alt="BlogWizard AI" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                        <h3>BlogWizard AI</h3>
+                        <p>Focused on long-form blog content with built-in SEO optimization and readability analysis.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $35/mo</span>
+                        </div>
+                        <a href="reviews/blogwizard-ai.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 6 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="../images/tool-placeholder-8.jpg" alt="ScriptForge AI" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                        <h3>ScriptForge AI</h3>
+                        <p>Specialized in creating video scripts, podcast outlines, and dialogue for various media formats.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $29/mo</span>
+                        </div>
+                        <a href="reviews/scriptforge-ai.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">AI Content Generation Tools Comparison</h2>
+            <div class="comparison-table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Rating</th>
+                            <th>Starting Price</th>
+                            <th>Blog Posts</th>
+                            <th>Marketing Copy</th>
+                            <th>Social Media</th>
+                            <th>SEO Features</th>
+                            <th>Plagiarism Check</th>
+                            <th>Free Trial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AI Content Generator Pro</strong></td>
+                            <td>4.5/5</td>
+                            <td class="price-tag">$29/mo</td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ContentCraft AI</strong></td>
+                            <td>4/5</td>
+                            <td class="price-tag">$25/mo</td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>WriterBot AI</strong></td>
+                            <td>5/5</td>
+                            <td class="price-tag">$39/mo</td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CopyGenius</strong></td>
+                            <td>3.5/5</td>
+                            <td class="price-tag">$19/mo</td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>BlogWizard AI</strong></td>
+                            <td>4/5</td>
+                            <td class="price-tag">$35/mo</td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ScriptForge AI</strong></td>
+                            <td>4/5</td>
+                            <td class="price-tag">$29/mo</td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-x"><i class="fas fa-times"></i></td>
+                            <td class="feature-check"><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Choose Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">How to Choose the Right AI Content Generation Tool</h2>
+            <div class="section-content">
+                <p>With so many AI writing tools available, it can be challenging to determine which one is right for your specific needs. Here are some key factors to consider when choosing an AI content generation tool:</p>
+                
+                <h3>1. Content Types</h3>
+                <p>Different AI tools specialize in different types of content. Some excel at long-form blog posts, while others are better for short-form marketing copy or social media content. Consider what type of content you'll be creating most frequently.</p>
+                
+                <h3>2. Ease of Use</h3>
+                <p>The user interface and overall user experience can significantly impact your productivity. Look for a tool with an intuitive interface that makes it easy to generate and edit content.</p>
+                
+                <h3>3. Output Quality</h3>
+                <p>The quality of the AI-generated content varies between tools. Some produce more human-like, engaging content, while others may require more editing. Read reviews and try free trials to assess output quality.</p>
+                
+                <h3>4. SEO Features</h3>
+                <p>If you're creating content for websites or blogs, SEO features like keyword optimization, readability analysis, and meta description generation can be valuable additions.</p>
+                
+                <h3>5. Integration Capabilities</h3>
+                <p>Consider whether the tool integrates with other software you use, such as WordPress, Google Docs, or marketing platforms.</p>
+                
+                <h3>6. Pricing Structure</h3>
+                <p>AI writing tools typically use subscription models with different tiers based on usage limits. Consider your content volume needs and budget when comparing pricing plans.</p>
+                
+                <h3>7. Language Support</h3>
+                <p>If you need to create content in multiple languages, check which languages the tool supports and how well it performs in non-English languages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">What is an AI content generation tool?</h3>
+                    <div class="faq-answer">
+                        <p>AI content generation tools use artificial intelligence, specifically natural language processing (NLP) and machine learning, to create written content. These tools can generate various types of content, including blog posts, articles, marketing copy, social media posts, product descriptions, and more.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Can AI-generated content rank well in search engines?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, AI-generated content can rank well in search engines if it's high-quality, valuable to readers, and properly optimized for SEO. However, it's important to review and edit AI-generated content to ensure it's accurate, engaging, and tailored to your specific audience. Search engines like Google don't penalize content simply for being AI-generated, but they do prioritize high-quality, helpful content regardless of how it was created.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Do I need to edit AI-generated content?</h3>
+                    <div class="faq-answer">
+                        <p>While AI content generation tools have become increasingly sophisticated, it's generally recommended to review and edit AI-generated content. Editing helps ensure the content aligns with your brand voice, contains accurate information, and flows naturally. The amount of editing required varies depending on the tool's quality and the complexity of your topic.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Are AI content generation tools worth the investment?</h3>
+                    <div class="faq-answer">
+                        <p>For many content creators, marketers, and businesses, AI content generation tools are worth the investment because they can significantly increase productivity and content output. These tools can help overcome writer's block, generate ideas, and create first drafts quickly. However, the value depends on your specific needs, content volume, and budget. Many tools offer free trials, which can help you determine if they're worth the investment for your situation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question">Can AI tools create content in languages other than English?</h3>
+                    <div class="faq-answer">
+                        <p>Many AI content generation tools support multiple languages, though the quality and number of supported languages vary by tool. Generally, the quality of AI-generated content tends to be highest in English, as most tools are primarily trained on English language data. If you need content in specific languages, check the tool's language support and test its capabilities in your target languages before committing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Exclusive AI Tool Deals</h2>
+                <p>Subscribe to our newsletter and receive exclusive discounts on the best AI content generation tools.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <div class="privacy-note">
+                    <small>We respect your privacy. Unsubscribe at any time.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="../images/logo.png" alt="NonstaticAI Logo">
+                    <p>Your ultimate guide to AI tools and software. Find reviews, comparisons, and recommendations for the best AI tools on the market.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="reviews.html">AI Tool Reviews</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>AI Categories</h3>
+                    <ul>
+                        <li><a href="content-generation.html">Content Generation</a></li>
+                        <li><a href="image-generation.html">Image Generation</a></li>
+                        <li><a href="video-creation.html">Video Creation</a></li>
+                        <li><a href="audio-tools.html">Audio Tools</a></li>
+                        <li><a href="productivity-tools.html">Productivity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NonstaticAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/seo.js"></script>
+    <script src="../js/mobile.js"></script>
+</body>
+</html>

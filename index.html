@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NonstaticAI - Your ultimate guide to AI tools and software. Find reviews, comparisons, and recommendations for the best AI tools on the market.">
+    <title>NonstaticAI - Your Guide to AI Tools and Software</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="NonstaticAI Logo" class="logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">AI Tools <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/content-generation.html">Content Generation</a></li>
+                            <li><a href="pages/image-generation.html">Image Generation</a></li>
+                            <li><a href="pages/video-creation.html">Video Creation</a></li>
+                            <li><a href="pages/audio-tools.html">Audio Tools</a></li>
+                            <li><a href="pages/productivity-tools.html">Productivity</a></li>
+                            <li><a href="pages/business-tools.html">Business</a></li>
+                            <li><a href="pages/development-tools.html">Development</a></li>
+                            <li><a href="pages/marketing-tools.html">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/reviews.html">Reviews</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form class="search-form" action="pages/search-results.html" method="get">
+                    <input type="text" name="query" placeholder="Search AI tools..." aria-label="Search">
+                    <button type="submit" aria-label="Submit Search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover the <span class="highlight">Future of AI</span> Tools</h1>
+                <p>Your ultimate guide to finding, comparing, and leveraging the best AI tools for your needs.</p>
+                <div class="hero-buttons">
+                    <a href="pages/reviews.html" class="btn btn-primary">Explore AI Tools</a>
+                    <a href="blog/index.html" class="btn btn-secondary">Read Our Blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Explore AI Tool Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Content Generation</h3>
+                    <p>Create blog posts, articles, and marketing copy with AI-powered writing tools.</p>
+                    <a href="pages/content-generation.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-image"></i></div>
+                    <h3>Image Generation</h3>
+                    <p>Transform ideas into stunning visuals with AI image generation tools.</p>
+                    <a href="pages/image-generation.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-video"></i></div>
+                    <h3>Video Creation</h3>
+                    <p>Create professional videos effortlessly with AI video generation tools.</p>
+                    <a href="pages/video-creation.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-headphones"></i></div>
+                    <h3>Audio Tools</h3>
+                    <p>Convert text to speech, generate music, and edit audio with AI tools.</p>
+                    <a href="pages/audio-tools.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-tasks"></i></div>
+                    <h3>Productivity</h3>
+                    <p>Boost your workflow with AI-powered productivity and automation tools.</p>
+                    <a href="pages/productivity-tools.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Business</h3>
+                    <p>Transform your business operations with AI-powered business solutions.</p>
+                    <a href="pages/business-tools.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Development</h3>
+                    <p>Accelerate your development process with AI coding assistants and tools.</p>
+                    <a href="pages/development-tools.html" class="btn btn-outline">Explore</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3>Marketing</h3>
+                    <p>Enhance your marketing strategies with AI-powered marketing tools.</p>
+                    <a href="pages/marketing-tools.html" class="btn btn-outline">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools -->
+    <section class="featured-tools">
+        <div class="container">
+            <h2 class="section-title">Top Rated AI Tools</h2>
+            <div class="tools-grid">
+                <!-- Tool Card 1 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="images/tool-placeholder-1.jpg" alt="AI Content Generator Tool" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-value">4.5/5</span>
+                        </div>
+                        <h3>AI Content Generator Pro</h3>
+                        <p>Create high-quality, SEO-optimized content in seconds with this powerful AI writing assistant.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Content Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $29/mo</span>
+                        </div>
+                        <a href="pages/reviews/ai-content-generator-pro.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 2 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="images/tool-placeholder-2.jpg" alt="AI Image Creator Tool" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                        <h3>AI Image Creator</h3>
+                        <p>Transform text prompts into stunning images with this state-of-the-art AI image generation tool.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Image Generation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $19/mo</span>
+                        </div>
+                        <a href="pages/reviews/ai-image-creator.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+                
+                <!-- Tool Card 3 -->
+                <div class="tool-card">
+                    <div class="tool-image">
+                        <img src="images/tool-placeholder-3.jpg" alt="AI Video Maker Tool" class="placeholder-image">
+                    </div>
+                    <div class="tool-content">
+                        <div class="tool-rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                        <h3>AI Video Maker</h3>
+                        <p>Create professional videos from text prompts with this revolutionary AI video generation platform.</p>
+                        <div class="tool-meta">
+                            <span class="tool-category"><i class="fas fa-tag"></i> Video Creation</span>
+                            <span class="tool-price"><i class="fas fa-dollar-sign"></i> From $49/mo</span>
+                        </div>
+                        <a href="pages/reviews/ai-video-maker.html" class="btn btn-primary">Read Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="pages/reviews.html" class="btn btn-secondary">View All AI Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="latest-posts">
+        <div class="container">
+            <h2 class="section-title">Latest from Our Blog</h2>
+            <div class="posts-grid">
+                <!-- Blog Post 1 -->
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/blog-placeholder-1.jpg" alt="AI Trends Blog Post" class="placeholder-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> March 20, 2025</span>
+                            <span class="post-category"><i class="fas fa-folder"></i> AI Trends</span>
+                        </div>
+                        <h3>10 AI Tools That Will Transform Your Content Creation in 2025</h3>
+                        <p>Discover the cutting-edge AI tools that are revolutionizing content creation and how they can boost your productivity.</p>
+                        <a href="blog/ai-tools-transform-content-creation.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/blog-placeholder-2.jpg" alt="AI Comparison Blog Post" class="placeholder-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> March 15, 2025</span>
+                            <span class="post-category"><i class="fas fa-folder"></i> Comparisons</span>
+                        </div>
+                        <h3>AI Image Generators Compared: Which One Is Right for You?</h3>
+                        <p>A comprehensive comparison of the top AI image generation tools to help you choose the best one for your specific needs.</p>
+                        <a href="blog/ai-image-generators-compared.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="post-card">
+                    <div class="post-image">
+                        <img src="images/blog-placeholder-3.jpg" alt="AI Tutorial Blog Post" class="placeholder-image">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar-alt"></i> March 10, 2025</span>
+                            <span class="post-category"><i class="fas fa-folder"></i> Tutorials</span>
+                        </div>
+                        <h3>How to Create Stunning Marketing Videos with AI in 5 Simple Steps</h3>
+                        <p>Learn how to leverage AI video creation tools to produce professional marketing videos without any technical expertise.</p>
+                        <a href="blog/create-marketing-videos-with-ai.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <a href="blog/index.html" class="btn btn-secondary">View All Blog Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with the Latest AI Tools</h2>
+                <p>Subscribe to our newsletter and be the first to know about new AI tools, exclusive deals, and industry insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+                <div class="privacy-note">
+                    <small>We respect your privacy. Unsubscribe at any time.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="NonstaticAI Logo">
+                    <p>Your ultimate guide to AI tools and software. Find reviews, comparisons, and recommendations for the best AI tools on the market.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/reviews.html">AI Tool Reviews</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>AI Categories</h3>
+                    <ul>
+                        <li><a href="pages/content-generation.html">Content Generation</a></li>
+                        <li><a href="pages/image-generation.html">Image Generation</a></li>
+                        <li><a href="pages/video-creation.html">Video Creation</a></li>
+                        <li><a href="pages/audio-tools.html">Audio Tools</a></li>
+                        <li><a href="pages/productivity-tools.html">Productivity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="pages/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                        <li><a href="pages/cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NonstaticAI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/seo.js"></script>
+    <script src="js/mobile.js"></script>
+</body>
+</html>
