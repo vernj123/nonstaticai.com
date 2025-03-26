@@ -1,6 +1,11 @@
 // NonstaticAI Main JavaScript File
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Create overlay element for mobile menu
+    const overlay = document.createElement('div');
+    overlay.className = 'menu-overlay';
+    document.body.appendChild(overlay);
+    
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
@@ -10,24 +15,48 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             e.stopPropagation();
             navMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
             
             // Toggle hamburger animation
             const hamburger = this.querySelector('.hamburger');
             if (hamburger) {
                 hamburger.classList.toggle('active');
             }
+        });
+        
+        // Close menu when clicking on overlay
+        overlay.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
             
-            // Close menu when clicking outside
-            if (navMenu.classList.contains('active')) {
-                document.addEventListener('click', function closeMenu(event) {
-                    if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-                        navMenu.classList.remove('active');
-                        if (hamburger) {
-                            hamburger.classList.remove('active');
-                        }
-                        document.removeEventListener('click', closeMenu);
-                    }
-                });
+            const hamburger = menuToggle.querySelector('.hamburger');
+            if (hamburger) {
+                hamburger.classList.remove('active');
+            }
+        });
+        
+        // Close menu when clicking on X button
+        navMenu.addEventListener('click', function(e) {
+            // Check if click was on the ::before pseudo-element (close button)
+            // We can't directly target pseudo-elements, so we check position
+            const rect = navMenu.getBoundingClientRect();
+            const isCloseButton = 
+                e.clientX >= rect.right - 40 && 
+                e.clientX <= rect.right - 10 &&
+                e.clientY >= rect.top + 10 && 
+                e.clientY <= rect.top + 40;
+                
+            if (isCloseButton) {
+                navMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                const hamburger = menuToggle.querySelector('.hamburger');
+                if (hamburger) {
+                    hamburger.classList.remove('active');
+                }
             }
         });
     }
