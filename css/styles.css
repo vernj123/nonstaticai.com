@@ -829,7 +829,7 @@ ul, ol {
         position: fixed;
         top: 0;
         right: -250px;
-        padding: var(--spacing-lg) var(--spacing-md);
+        padding: 60px var(--spacing-md) var(--spacing-md);
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
         z-index: 1000;
         transition: right 0.3s ease;
@@ -849,6 +849,7 @@ ul, ol {
     .nav-menu.active {
         display: flex;
         right: 0;
+        align-items: flex-start;
     }
     
     /* Add overlay when menu is active */
@@ -870,6 +871,7 @@ ul, ol {
     .nav-menu li {
         margin: var(--spacing-xs) 0;
         width: 100%;
+        display: block;
     }
     
     .nav-menu a {
@@ -877,6 +879,7 @@ ul, ol {
         display: block;
         width: 100%;
         border-radius: var(--border-radius-sm);
+        color: var(--text-primary);
     }
     
     .nav-menu a:hover {
@@ -889,9 +892,11 @@ ul, ol {
         visibility: visible;
         transform: none;
         box-shadow: none;
-        background-color: transparent;
+        background-color: rgba(30, 30, 40, 0.5);
         padding: 0 0 0 var(--spacing-md);
         display: none;
+        margin-top: 5px;
+        border-radius: var(--border-radius-sm);
     }
     
     .dropdown.active .dropdown-menu {
