@@ -1,43 +1,71 @@
 // NonstaticAI Main JavaScript File
 
+// Define global functions for mobile menu
+function showMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const overlay = document.querySelector('.menu-overlay');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (navMenu && overlay) {
+        navMenu.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        if (hamburger) {
+            hamburger.classList.add('active');
+        }
+    }
+}
+
+function hideMobileMenu() {
+    const navMenu = document.querySelector('.nav-menu');
+    const overlay = document.querySelector('.menu-overlay');
+    const hamburger = document.querySelector('.hamburger');
+    
+    if (navMenu && overlay) {
+        navMenu.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        if (hamburger) {
+            hamburger.classList.remove('active');
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Create overlay element for mobile menu
-    const overlay = document.createElement('div');
-    overlay.className = 'menu-overlay';
-    document.body.appendChild(overlay);
+    // Create overlay element for mobile menu if it doesn't exist
+    if (!document.querySelector('.menu-overlay')) {
+        const overlay = document.createElement('div');
+        overlay.className = 'menu-overlay';
+        document.body.appendChild(overlay);
+        
+        // Add click event to overlay
+        overlay.addEventListener('click', hideMobileMenu);
+    }
     
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
-    if (menuToggle && navMenu) {
+    if (menuToggle) {
+        // Remove any existing click listeners to prevent duplicates
+        menuToggle.removeEventListener('click', showMobileMenu);
+        // Add click event using the global function
         menuToggle.addEventListener('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
-            navMenu.classList.toggle('active');
-            overlay.classList.toggle('active');
-            document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
             
-            // Toggle hamburger animation
-            const hamburger = this.querySelector('.hamburger');
-            if (hamburger) {
-                hamburger.classList.toggle('active');
+            if (navMenu.classList.contains('active')) {
+                hideMobileMenu();
+            } else {
+                showMobileMenu();
             }
         });
-        
-        // Close menu when clicking on overlay
-        overlay.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-            
-            const hamburger = menuToggle.querySelector('.hamburger');
-            if (hamburger) {
-                hamburger.classList.remove('active');
-            }
-        });
-        
-        // Close menu when clicking on X button
+    }
+    
+    // Close menu when clicking on X button
+    if (navMenu) {
         navMenu.addEventListener('click', function(e) {
             // Check if click was on the ::before pseudo-element (close button)
             // We can't directly target pseudo-elements, so we check position
@@ -49,14 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.clientY <= rect.top + 40;
                 
             if (isCloseButton) {
-                navMenu.classList.remove('active');
-                overlay.classList.remove('active');
-                document.body.style.overflow = '';
-                
-                const hamburger = menuToggle.querySelector('.hamburger');
-                if (hamburger) {
-                    hamburger.classList.remove('active');
-                }
+                hideMobileMenu();
             }
         });
     }
@@ -155,6 +176,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check on scroll
     window.addEventListener('scroll', animateOnScroll);
-    
-// Search functionality removed as requested
 });

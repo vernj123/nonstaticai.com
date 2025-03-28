@@ -837,13 +837,24 @@ ul, ol {
     }
     
     .nav-menu::before {
-        content: '×';
+        content: '';
         position: absolute;
         top: 15px;
         right: 20px;
         font-size: 24px;
         color: var(--neon-primary);
         cursor: pointer;
+    }
+    
+    .close-menu {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    
+    .close-menu a {
+        color: var(--neon-primary);
+        font-size: 24px;
     }
     
     .nav-menu.active {
